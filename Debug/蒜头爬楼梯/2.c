@@ -1,18 +1,19 @@
 #include <stdio.h>
-int cal_step(int a[], int n){
-    return a[n] = a[n - 2] + a[n - 3];
-}
+
 int main() {
-	int N;//×ÜÌ¨½×Êı
+	int N;//æ€»å°é˜¶æ•°
     scanf("%d", &N);
-    int step[50];//step[N]N¼¶Ì¨½×µÄ·½·¨Êı
+    int step[51];//step[N]Nçº§å°é˜¶çš„æ–¹æ³•æ•°
+    int i;
     step[0] = 0;
     step[1] = 0;
     step[2] = 1;
     step[3] = 1;
-    for (int i = 4; i <= N; i++){
+    step[4] = 1;
+    for (i = 5; i <= N; i++) {
         step[i] = step[i - 2] + step[i - 3];
     }
     printf("%d", step[N]);
     return 0;
 }
+
