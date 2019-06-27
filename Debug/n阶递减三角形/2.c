@@ -11,9 +11,10 @@ int main() {
                 printf(" ");
             }
             else{
-                 printf("%d\n",i);
+                 printf("%d\n",j);
             }
         }
     }
     return 0;
 }
+
