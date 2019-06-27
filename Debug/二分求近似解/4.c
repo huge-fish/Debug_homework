@@ -40,10 +40,10 @@ double bisection(int p, int q, double (*func)(int, int, double)) {
 		}
             return m;
      } else if ((f(p, q, m) < 0 
-                    && f(p, q, b) > 0) || (f(p, q, m) > 
+                    && f(p, q, b) > 0) || (f(p, q, m) > 0
                     && f(p, q, b) < 0)) {
            while (fabs(f(p, q, m)) >= EPSILON){
-               if((f(p, q, m) < 
+               if((f(p, q, m) < 0
                    && f(p, q, a) > 0) || (f(p, q, m) > 0 
                    && f(p, q, a) < 0)){
                    b = m;

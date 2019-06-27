@@ -2,12 +2,12 @@
 #include <string.h>
 
 int main() {
-    char names[10][21];
-    for (int i = 0; i < 10; i++) {
+    char names[11][21];
+    for (int i = 0; i <= 10; i++) {
         scanf("%s", names[i]);
     }
     
-    for (int i = 0; i < 10; i++) {
+    for (int i = 0; i <= 10; i++) {
         for (int j = 0; j <= 10 - i - 1; j++) {
             if (strcmp(names[j], names[j+ 1]) > 0) {
                 char temp[21];
@@ -18,7 +18,7 @@ int main() {
         }
     }
     
-    for (int i = 0; i < 10; i++) {
+    for (int i = 1; i <= 10; i++) {
         printf("%s\n", names[i]);
     }
     return 0;
