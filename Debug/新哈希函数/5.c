@@ -2,7 +2,7 @@
 #include <string.h>
 
 int main() {
-    char arr[32];
+    int arr[32];
     char str[32];
     int bits[32];
     char result[32];
@@ -24,14 +24,14 @@ int main() {
         }else if(j >= 32){
             j=0; 
         }
-        arr[j] = (int)(input) +arr[j];
+        arr[j] = (int)(input) + (int)arr[j];
         //printf("%d ",arr[j]);
         j++;
     }
-    /*for(int i=0 ;i<32 ;i++)
+    for(int i=0 ;i<32 ;i++)
     {
     	printf("%d ",arr[i]); //test data
-	}*/
+	}
     
    
     
@@ -46,4 +46,4 @@ int main() {
     }
     return 0;
 }
-   
+  

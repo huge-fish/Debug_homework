@@ -25,9 +25,9 @@ int main() {
         arr[j % 32] = arr[j % 32] + (int)(input);
         j++;
     }
-   for(int i = 0; i < 32; i++){
+   /*for(int i = 0; i < 32; i++){
         printf("%d ",arr[i]);
-    }
+    }*/
     for (int i = 0; i < 32; i++) {
         bits[i] = (arr[31 - i]) ^ (arr[i] << 1);
         int b = (bits[i] % 85) + 34;
