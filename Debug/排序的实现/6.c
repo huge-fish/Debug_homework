@@ -4,10 +4,10 @@ int main() {
     int n = 10;
     int m;
     int numbers[10];
-    int i,j;
+    int i, j;
     int tmpt;
 
-    // 读入给定的数字
+    // 
     for (i = 0; i < n; i++) {
         scanf("%d", &numbers[i]);
     }
@@ -33,3 +33,4 @@ int main() {
 
     return 0;
 }
+

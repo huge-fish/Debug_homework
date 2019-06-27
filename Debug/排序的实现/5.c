@@ -1,12 +1,19 @@
 #include <stdio.h>
 
+void swap (int *a, int *b) {
+	int mid;
+	mid = *a;
+	*a = *b;
+	*b = mid;
+	return;
+}
 int main() {
     int n = 10;
     int m;
     int numbers[10];
     int i,j;
 
-    // 读入给定的数字
+    
     for (i = 0; i < n; i++) {
         scanf("%d", &numbers[i]);
     }
@@ -30,3 +37,4 @@ int main() {
 
     return 0;
 }
+

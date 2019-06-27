@@ -1,4 +1,5 @@
 #include <stdio.h>
+
 void swap(int *a, int *b){
     int temp;
     temp = *a;
@@ -12,7 +13,7 @@ int main() {
     int numbers[n];
     int i;
 	int j;
-    // 读入给定的数字
+    
     for (i = 0; i < n; i++) {
         scanf("%d", &numbers[i]);
     }
@@ -31,3 +32,4 @@ int main() {
     }
     return 0;
 }
+
